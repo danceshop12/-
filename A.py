@@ -7,9 +7,6 @@ from discord.ext import commands
 client = commands.Bot(command_prefix='!')
 
 
-token ='ODc1NzUxNzc1MjcyMDU0ODA1.YRaFZQ.dGQgU1myHDxKkaKiZZVmDtuMYQE'
-
-
 @client.event
 async def on_ready():
     print("실행 됐노 이기야 이거슨 춤추는샵주가 첨으로 만든 봇이노 이기")
@@ -300,5 +297,5 @@ async def on_message(message):
         await message.delete()
         await message.author.send("욕은 안댕")
 
-    
-client.run(token)
+access_token - os.environ["bot_token"]
+client.run(access_token)
