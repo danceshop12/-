@@ -297,5 +297,5 @@ async def on_message(message):
         await message.delete()
         await message.author.send("욕은 안댕")
 
-access_token - os.environ["bot_token"]
+access_token - os.environ["BOT_TOKEN"]
 client.run(access_token)
